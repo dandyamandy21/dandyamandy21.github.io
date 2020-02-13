@@ -1,0 +1,278 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amanda Yee</title>
+      <link rel="stylesheet" type="text/css" href="https://26d027b0.ngrok.io/foundation_styles/foundation/css/foundation.css">
+      <!-- <link rel="stylesheet" href="stylesheets/app.css" /> -->
+      <link rel="stylesheet" href="stylesheets/build.css" />
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+      <style>
+          @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800&display=swap');
+      </style>
+    <script src="https://26d027b0.ngrok.io/foundation_styles/modernizr/modernizr.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-29114095-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!-- Start of Async Drift Code -->
+<script>
+!function() {
+  var t;
+  if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
+  t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+  t.factory = function(e) {
+    return function() {
+      var n;
+      return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+    };
+  }, t.methods.forEach(function(e) {
+    t[e] = t.factory(e);
+  }), t.load = function(t) {
+    var e, n, o, i;
+    e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
+    o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
+    n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+  });
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('8h42z5m2b4k5');
+</script>
+<!-- End of Async Drift Code -->
+
+<!-- place this script tag after the Drift embed tag -->
+<script>
+(function() {
+ /* Add this class to any elements you want to use to open Drift.
+ *
+ * Examples:
+ * - <a class="drift-open-chat">Questions? We're here to help!</a>
+ * - <button class="drift-open-chat">Chat now!</button>
+ *
+ * You can have any additional classes on those elements that you
+ * would ilke.
+ */
+ var DRIFT_CHAT_SELECTOR = '.drift-open-chat'
+
+ /* http://youmightnotneedjquery.com/#ready */
+ function ready(fn) {
+ if (document.readyState != 'loading') {
+ fn();
+ } else if (document.addEventListener) {
+ document.addEventListener('DOMContentLoaded', fn);
+ } else {
+ document.attachEvent('onreadystatechange', function() {
+ if (document.readyState != 'loading')
+ fn();
+ });
+ }
+ }
+ /* http://youmightnotneedjquery.com/#each */
+ function forEachElement(selector, fn) {
+ var elements = document.querySelectorAll(selector);
+ for (var i = 0; i < elements.length; i++)
+ fn(elements[i], i);
+ }
+ function openSidebar(driftApi, event) {
+ event.preventDefault();
+ driftApi.sidebar.open();
+ return false;
+ }
+ ready(function() {
+ drift.on('ready', function(api) {
+ var handleClick = openSidebar.bind(this, api)
+ forEachElement(DRIFT_CHAT_SELECTOR, function(el) {
+ el.addEventListener('click', handleClick);
+ });
+ });
+ });
+})();
+</script>
+
+  </head>
+  <body>
+    <div class="header_background_drift">
+      
+      <div id="navigation">
+          <div class="nav_left">
+            <a class="selected logo" style="color: #346366" href="index.html"><img id="logo" src="images/ay_logo.png"></a>
+          </div>
+          <div class="nav_right">
+              <a href="index.html">Work</a>
+              <a href="about.html">About</a>
+              <a class="drift-open-chat" href="drift_onboarding.html#">Contact</a>
+          </div>
+      </div>
+
+      <div id="casestudy_header"> 
+        <div class="casestudy_title row">
+            <h2>Drift onboarding</h2>
+            <h4>Helping customers set up Drift to fit their business</h4>
+        </div> 
+        <div class="row">
+          <div class="large-12 columns">
+                <img id="about-img" src="images/drift_onboarding/header.png">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div id="casestudy_body">
+
+        <div class="row">
+          <div class="small-12 medium-12 large-12 columns">
+            <h3>The customer problem</h3>
+              <p> 
+                  Setting up the product was so daunting + confusing for new customers that they couldn’t do it without the help of their CSM (Customer Success Manager). On kickoff calls, CSMs were spending 20min of the call configuring basic product settings - things that they could have set up on their own!
+                  <br><br>
+                  The way to help customers get set up on their own is through better product onboarding - where admins can feel knowledgeable and confident configuring basic settings. Thus leaving the CSM to focus more on business strategy.
+                  <br><br>
+                  And so we went out to solve this customer problem:
+              </p>
+              <p class="problem">
+                  When I pay for Drift, I want to be able to create my account and complete basic setup that matches my business so I can use Drift sooner.
+              </p>
+            <h3>Who we’re solving for</h3>
+              <p> 
+                  The main persona we’re solving for are marketing admins - the customer who buys Drift and is responsible for managing the platform.
+                  <br><br>The secondary persona being the Drift CSM (Customer Success Managers). We needed to create an onboarding to integrate seamlessly into their workflow, while also transforming their time to focus more on strategy rather than setup.
+              </p>
+            <h3>My role</h3>
+              <p> 
+                  As the product designer on the team, my role was to design the new onboarding system and the steps within it. I also worked with my product manager to identify and document the problem by creating a user journey map. My teammates were my Product Manager, Tech Lead, Front End engineer and User Researcher.
+              </p>
+          </div>
+        </div>
+        <div class="casestudy_images">
+          <img src="images/video_onboarding/video_record.jpg">
+        </div>  
+        <div class="row">
+          <div class="small-12 medium-12 large-12 columns">      
+            <h3>Challenges</h3>
+              <p> 
+                  There were many challenges, but here are two big ones. This was a large problem with many stakeholders and moving parts. We brought our Customer Success team in to our product process and worked closely with them to build trust and ensure we were on the same page. They truly became our partners.
+                  <br><br>
+                  It was also difficult to know where to start - we spent a lot of time in the discovery phase to make sure we deeply understood the problem, and the why behind it.
+              </p>
+            <h3>Process</h3>
+              <p> 
+                  For a month, we interviewed 7 CSMs and listened to an hour of customer kickoff calls each week to really understand the depth of the customer problem. Matt (my product manager) and I used this research to create a customer journey map to visualize the entire customer journey - who’s involved, what actions were being taken, our customers’ emotions, and possible opportunities for improvement.
+                  <br><Br>
+                  We shared this with Customer Success leaders to make sure our observations were accurate, and used it to create alignment between Senior Leadership. It surfaced the scale of the problem we were trying to solve, and we continuosly used it to show our team’s progress.
+              </p>
+          </div>
+        </div>   
+        <div class="casestudy_images">
+          <a href="images/drift_onboarding/journey_map.png" target="_blank"><img src="images/drift_onboarding/journey_map.png"></a>
+        </div>
+        <div class="row">
+          <div class="small-12 medium-12 large-12 columns"> 
+              <p> 
+                  I wanted to make sure we were creating an opinionated system. Based on the low emotions customers felt throughout their onboarding, we needed to make sure we weren’t designing that same experience.   
+                  <br><br>
+                  <b>So I came up with principles to guide the design: </b><br>
+                  • It needs to celebrate the user and encourage them <br>
+                  • It should feel magical, like no work at all <br>
+                  • It should allow users can move at their own pace • It needs to be simple and educational, without feeling overwhelming.
+         </div>
+        </div>        
+         <div class="casestudy_images">
+           <img src="images/drift_onboarding/celebrate.gif">
+         </div>
+         <div class="row">
+          <div class="small-12 medium-12 large-12 columns">
+                  <b>This onboarding system needed to scale with us.</b>
+                  <br>
+                  Because we believe in shipping small, incremental value, we needed a system that would provide a great experience when completing one step and when completing 8+ steps. It had to be flexible enough to handle a variety of configuration options and information, all while still feeling like part of the same experience.
+         </div>
+        </div>        
+         <div class="casestudy_images">
+           <img src="images/drift_onboarding/template.png">
+         </div>
+         <div class="row">
+          <div class="small-12 medium-12 large-12 columns">
+                  <b>A lot of information needed to be available. </b>
+                  <br>
+                  For each step we had to educate our new customers, provide a way to get help if needed and surface their progress - all while keeping the actual setup at the forefront. This was definitely an exercise in hierachy. The steps needed to feel simple, and the next actions needed to be clear. 
+         </div>
+        </div>        
+         <div class="casestudy_images">
+           <a href="images/drift_onboarding/widget_colors.png" target="blank"><img src="images/drift_onboarding/widget_colors.png" style="padding-bottom:16px"></a>
+           <a href="images/drift_onboarding/icon.png" target="blank"><img src="images/drift_onboarding/icon.png"></a>
+         </div>
+          <div class="row">
+          <div class="small-12 medium-12 large-12 columns">
+                 <b>Users needed to keep track of their progress and go at their own pace.  </b>
+                 <br>
+                 The progress navigation could really be its own case study 😅 There are many mini-jobs it solves. It indicates where a user is in onboarding and lets them know how many Steps are involved in each Topic. It lets them know at a glance which Steps are complete, incomplete or need attention. It also acts as a navigation so users can jump around to steps and complete the ones they feel comfortable completing.
+          </div>
+          </div> 
+         <div class="casestudy_images">
+           <a href="images/drift_onboarding/widget_colors.png" target="blank"><img src="images/drift_onboarding/progress_nav.png"></a>
+         </div>
+        <div class="row">
+          <div class="small-12 medium-12 large-12 columns">  
+                <h3>Results</h3>
+                This was recently released so we’re still gathering results! We’ve added tracking to learn as much as we can.
+                <br><br>
+                We’re tracking the time spent on each step, time spent in onboarding overall, which help links are clicked and how many times they’re clicked. We’re also monitoring this funnel: how many customers start onboarding, complete a step, and then complete all of onboarding. Stay tuned.
+                </p>
+          </div>
+        </div>
+    
+  </div>
+
+      <div class="next_project reporting">
+          <div class="row reverse-cols">
+            <div class="small-12 large-6 columns">
+                    <a class="img" href="reporting.html"><img src="images/work/work_reporting.png"></a>
+              </div>
+              <div class="small-12 large-6 columns">
+                    <h5>Conversational reporting</h5>
+                    Giving admins the tools they need to monitor their team’s performance.
+                    <br>
+                    <span><a href="reporting.html">View project</a></span>
+              </div>  
+            </div>
+          </div>
+      </div>
+
+     
+
+
+  <div id="footer">
+      <span>
+        <a href="mailto:amandamarieyee@gmail.com?subject=Saw your portofolio...&body=It looks great!" target="blank" class="footer_email"></a>
+        <a href="https://www.linkedin.com/in/amandamarieyee" target="blank" class="footer_linkedin"></a>
+        <a href="https://www.twitter.com/dandyamandy" target="blank" class="footer_twitter"> </a>
+        <a href="https://www.instagram.com/dandyamandy" target="blank" class="footer_instagram"> </a>
+        <br>
+      Designed and built by yours truly '20
+      </span>
+  </div>
+
+
+    <script src="https://26d027b0.ngrok.io/foundation_styles/jquery/dist/jquery.min.js"></script>
+    <script src="https://26d027b0.ngrok.io/foundation_styles/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://26d027b0.ngrok.io/foundation_styles/foundation/js/vendor/jquery.js"></script>
+    <script src="https://26d027b0.ngrok.io/foundation_styles/foundation/js/foundation/foundation.js"></script>
+    <script src="https://26d027b0.ngrok.io/foundation_styles/foundation/js/foundation/foundation.topbar.js"></script>
+    <script src="https://26d027b0.ngrok.io/foundation_styles/foundation/js/foundation/foundation.magellan.js"></script>
+    <script src="https://26d027b0.ngrok.io/foundation_styles/foundation/js/foundation/foundation.clearing.js"></script>
+    <script src="https://26d027b0.ngrok.io/foundation_styles/foundation/js/foundation/foundation.offcanvas.js"></script>
+    <script src="https://26d027b0.ngrok.io/foundation_styles/foundation/js/foundation/foundation.abide.js"></script>
+
+
+  </body>
+</html>

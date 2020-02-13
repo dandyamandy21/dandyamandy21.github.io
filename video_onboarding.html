@@ -1,0 +1,287 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amanda Yee</title>
+      <link rel="stylesheet" type="text/css" href="foundation_styles/foundation/css/foundation.css">
+      <!-- <link rel="stylesheet" href="stylesheets/app.css" /> -->
+      <link rel="stylesheet" href="stylesheets/build.css" />
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+      <style>
+          @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800&display=swap');
+      </style>
+    <script src="https://26d027b0.ngrok.io/foundation_styles/modernizr/modernizr.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-29114095-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!-- Start of Async Drift Code -->
+<script>
+!function() {
+  var t;
+  if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
+  t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+  t.factory = function(e) {
+    return function() {
+      var n;
+      return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+    };
+  }, t.methods.forEach(function(e) {
+    t[e] = t.factory(e);
+  }), t.load = function(t) {
+    var e, n, o, i;
+    e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
+    o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
+    n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+  });
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('8h42z5m2b4k5');
+</script>
+<!-- End of Async Drift Code -->
+
+<!-- place this script tag after the Drift embed tag -->
+<script>
+(function() {
+ /* Add this class to any elements you want to use to open Drift.
+ *
+ * Examples:
+ * - <a class="drift-open-chat">Questions? We're here to help!</a>
+ * - <button class="drift-open-chat">Chat now!</button>
+ *
+ * You can have any additional classes on those elements that you
+ * would ilke.
+ */
+ var DRIFT_CHAT_SELECTOR = '.drift-open-chat'
+
+ /* http://youmightnotneedjquery.com/#ready */
+ function ready(fn) {
+ if (document.readyState != 'loading') {
+ fn();
+ } else if (document.addEventListener) {
+ document.addEventListener('DOMContentLoaded', fn);
+ } else {
+ document.attachEvent('onreadystatechange', function() {
+ if (document.readyState != 'loading')
+ fn();
+ });
+ }
+ }
+ /* http://youmightnotneedjquery.com/#each */
+ function forEachElement(selector, fn) {
+ var elements = document.querySelectorAll(selector);
+ for (var i = 0; i < elements.length; i++)
+ fn(elements[i], i);
+ }
+ function openSidebar(driftApi, event) {
+ event.preventDefault();
+ driftApi.sidebar.open();
+ return false;
+ }
+ ready(function() {
+ drift.on('ready', function(api) {
+ var handleClick = openSidebar.bind(this, api)
+ forEachElement(DRIFT_CHAT_SELECTOR, function(el) {
+ el.addEventListener('click', handleClick);
+ });
+ });
+ });
+})();
+</script>
+
+  </head>
+  <body>
+    <div class="header_background_video">
+      
+      <div id="navigation">
+          <div class="nav_left">
+            <a class="selected logo" style="color: #346366" href="index.html"><img id="logo" src="images/ay_logo.png"></a>
+          </div>
+          <div class="nav_right">
+              <a href="index.html">Work</a>
+              <a href="about.html">About</a>
+              <a class="drift-open-chat" href="video_onboarding.html#">Contact</a>
+          </div>
+      </div>
+
+      <div id="casestudy_header"> 
+        <div class="casestudy_title row">
+            <h2>Drift Video onboarding</h2>
+            <h4>Helping users record and share their first video</h4>
+        </div> 
+        <div class="row">
+          <div class="large-12 columns">
+                <img id="about-img" src="images/video_onboarding/header.jpg">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div id="casestudy_body">
+
+        <div class="row">
+          <div class="small-12 medium-12 large-12 columns">
+            <h3>The customer problem</h3>
+              <p> 
+                  It was an exciting time at Drift. We were preparing for Hypergrowth, our annual conference, and were going to announce a brand new product called Drift Video. The plan was to have our CEO announce it and ask audience members to sign up for the product right then and there. Only trouble is that there wasn’t a way to sign up for the product - yet.
+                  <br><br>
+                  And so we went out to solve this customer problem:
+              </p>
+              <p class="problem">
+                  After I sign up, I want to easily get setup so that I can record and send a video.
+              </p>
+            <h3>Who we’re solving for</h3>
+              <p> 
+                  This onboarding needed to be simple and easy for…. everyone. Our persona was anyone in a B2B context - really anyone should be able to sign up and use the product.
+              </p>
+            <h3>My role</h3>
+              <p> 
+                  As the product designer on the team, my role was to identify and design the different user flows for desktop and mobile. The team was made up of a Product Manager, Product Designer, Tech Lead, Front End engineer and User Researcher. I also worked closely with our iOS team to ensure that what we designed for desktop would transfer well to mobile. 
+              </p>
+          </div>
+        </div>
+        <div class="casestudy_images">
+          <img src="images/video_onboarding/video_record.jpg">
+        </div>  
+        <div class="row">
+          <div class="small-12 medium-12 large-12 columns">      
+            <h3>Challenges</h3>
+              <p> 
+                  One of the biggest challenges with designing this onboarding was that there were a ton of possible paths a user could take. We had to consider what device they were on (desktop, iOS or Android) and support whether or not they already had a Drift account.
+                  <br><br>
+                  Another challenge was working with the product itself. Drift Video is a Google Chrome extension and because of this, we had to design within the constraints of Google’s APIs while still providing a smooth experience for Drift’s users.
+              </p>
+            <h3>Process</h3>
+              <p> 
+                  <b>For the sake of clarity and focus, I’m going to focus on the specific details related to the desktop onboarding flow.</b>
+                  <br><br>
+                  The first step was to identify the different user flows we needed to solve for. My PM and I worked closely here, and then prioritized which ones to tackle first.
+                  <br><br>
+                  I then made flow charts to visualize paths a user could take and what road blocks they might run into. This was incredibly important to get the whole team and our stake holders on the same page. Whenever this question was asked: “what happens when…” the answer was to check the flow chart. And if the answer wasn’t there, then we uncovered a new scenario to add!
+              </p>
+          </div>
+        </div>   
+        <div class="casestudy_images">
+          <a href="images/video_onboarding/video_userflows.jpg" target="_blank"><img src="images/video_onboarding/video_userflows.jpg"></a>
+        </div>
+        <div class="row">
+          <div class="small-12 medium-12 large-12 columns"> 
+              <p> 
+                  To get access to the product, users needed to download the Chrome extension. We leaned into our role model, Honey, and followed their pattern by bringing the Chrome Extension page to the user.
+                  <br><br>
+                  Once users got into the product - the next step was to record their first video! This is where we ran into the technical limitation of Google’s API - we weren’t allowed to open the Drift Video Chrome extension automatically.
+                  <br><br>
+                  This meant that instead of bringing the recording experience to the user, we had to rely on the user to find the recording experience themselves. And so we got creative and used bouncing arrows as a recurring signal to guide users to their next action. The repeated visual made it so that users knew exactly where to go to record their first video.
+                  <br><br>
+                  After users launch the Drift Video exension, they need to grant camera and microphone permissions to record their first video. This was a hurdle because of the perceived loss of privacy. To ease the fear, we made it clear “why” these permissions were so important to recording great videos that produce results. And if users really didn’t want to grant permissions, we had a screenrecording flow to handle that path as well.
+                  <br><br>
+                  During the process I tested with internal sales reps and iterated. Once I felt good with the designs, I worked with our research team who screened and user tested this design with brand new users on usertesting.com.
+              </p>
+         </div>
+        </div>        
+         <div class="casestudy_images">
+           <img src="images/video_onboarding/video_permissions.jpg">
+         </div>
+        <div class="row">
+          <div class="small-12 medium-12 large-12 columns">  
+            <h3>Results</h3>
+              <p> 
+                  To learn whether or not we succeeded, we created a funnel to track key steps of a customer’s journey. From a customer’s perspective, we organized our funnel like this:  
+                  <br><br>
+                  <b>Product enabled</b> = I’ve created an account <br>
+                  <b>Sign up completed</b> = I’ve installed the Drift Video extension <br>
+                  <b>Video created</b> = I’ve created my first video! <br>
+                  <b>Video viewed</b> = My video was viewed by someone else.
+                  <br><br>
+                  Over the past 7 months since it’s launched, the average conversion rate for someone who installs the Drift Video extension to recording their first video is 75%. With the range being from 73% to 82% conversion rates. Even typing this is an insane number to me!
+                </p>
+          </div>
+        </div>
+        <div id="quotes_container">
+            <div class="row">
+              <div class="small 12 large-6 columns">
+                    <img src="images/video_onboarding/Quotes.jpg">
+              </div>
+              <div class="small 12 large-6 columns">
+                    <img src="images/video_onboarding/Walter.jpg">
+              </div>  
+            </div>
+            <div class="row">
+              <div class="small 12 large-6 columns">
+                    <img src="images/video_onboarding/Charleigh.jpg">
+              </div>
+              <div class="small 12 large-6 columns">
+                    <img src="images/video_onboarding/Theresa.jpg">
+              </div>  
+            </div>
+        </div>
+        <div class="row">
+          <div class="small-12 medium-12 large-12 columns">  
+               <p>   
+                  We then identified other opportunities to improve the funnel. We found two major parts in our experience to tackle next. First was “Product enabled” - how could we drive signups so that someone would install Drift Video? Once they installed - it was clear they were 75% likely to  record a video.
+                  <br><br>
+                  The second opportunity was “Video viewed” - once someone recorded a video, how could we encourage them to share it to get a view? By sharing - they’d complete their flywheel to fuel more video creating + sharing.
+                  <br><br>
+                  With tracking - we learned what was working and what wasn’t so we could focus our efforts on the parts of the funnel that needed the most help.
+              </p>
+            </div>
+        </div>
+    
+  </div>
+
+      <div class="next_project onboarding">
+          <div class="row reverse-cols">
+            <div class="small-12 large-6 columns">
+                    <a class="img" href="reporting.html"><img src="images/work/work_onboarding.png"></a>
+              </div>
+              <div class="small-12 large-6 columns">
+                    <h5>Drift onboarding</h5>
+                    Helping customers set up Drift
+                    <br>
+                    to fit their business.
+                    <br>
+                    <span><a href="drift_onboarding.html">View project</a></span>
+              </div>  
+            </div>
+          </div>
+      </div>
+
+     
+
+
+  <div id="footer">
+      <span>
+        <a href="mailto:amandamarieyee@gmail.com?subject=Saw your portofolio...&body=It looks great!" target="blank" class="footer_email"></a>
+        <a href="https://www.linkedin.com/in/amandamarieyee" target="blank" class="footer_linkedin"></a>
+        <a href="https://www.twitter.com/dandyamandy" target="blank" class="footer_twitter"> </a>
+        <a href="https://www.instagram.com/dandyamandy" target="blank" class="footer_instagram"> </a>
+        <br>
+      Designed and built by yours truly '20
+      </span>
+  </div>
+
+
+    <script src="foundation_styles/jquery/dist/jquery.min.js"></script>
+    <script src="foundation_styles/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="foundation_styles/foundation/js/vendor/jquery.js"></script>
+    <script src="foundation_styles/foundation/js/foundation/foundation.js"></script>
+    <script src="foundation_styles/foundation/js/foundation/foundation.topbar.js"></script>
+    <script src="foundation_styles/foundation/js/foundation/foundation.magellan.js"></script>
+    <script src="foundation_styles/foundation/js/foundation/foundation.clearing.js"></script>
+    <script src="foundation_styles/foundation/js/foundation/foundation.offcanvas.js"></script>
+    <script src="foundation_styles/foundation/js/foundation/foundation.abide.js"></script>
+
+
+  </body>
+</html>
